@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>SociusFlix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/templatemo-festava-live.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<div class="dark-overlay"></div>
+<main>
+    <section class="hero-section">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column flex-md-row align-items-start">
+                <div class="mb-md-0">
+                    <h1 class="text-white mb-5">Socius<span>Flix</span></h1>
+                    <div class="select-container">
+                        <select id="pelicula-select">
+                            <option value="">Seleccione una película</option>
+                        </select>
+                    </div>
+                    <button class="btn custom-btn smoothscroll" id="buttonElegir" onclick="mostrarPeliculaSeleccionada()">Elegir película</button>
+                    <button class="btn custom-btn smoothscroll" id="buttonAzar" onclick="getPeliculaAleatorio()">¡O prueba tu suerte!</button>
+                    <div class="text-center mt-3">
+                        <img src="assets/img/ilustracion.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div id="pelicula-info" class="card">
+                    <img id="pelicula-img" class="card-img-top" src="assets/img/movietime.jpg">
+                    <div class="card-body">
+                        <h5 id="titulo" class="card-title">¡Bienvenido!</h5>
+                        <p id="ano" class="card-text">Elegí tu película, o deja que la suerte lo haga por vos...</p>
+                        <p id="genero" class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="assets/js/jquery2.min.js"></script>
+<script src="assets/js/actions.js"></script>
+<script src="assets/js/jquery2.min.js"></script>
+<script src="assets/js/actions.js"></script>
+</html>

@@ -1,0 +1,102 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+}
+
+span {
+    color: #70c6fd;
+}
+
+button {
+    margin: 3px;
+    width: 100%;
+}
+
+#buttonElegir {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #70c6fd;
+}
+
+#buttonAzar {
+    background-color: #70c6fd;
+    color: white;
+}
+
+#pelicula-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #70c6fd;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#pelicula-select:focus {
+    border-color: #0096ff;
+}
+
+#pelicula-select {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.2 2.4"><path fill="%2370c6fd" d="M2.1 2.4L0 0h4.2z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 12px;
+    padding-right: 30px;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pelicula-info {
+    display: none;
+    max-width: 400px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+#pelicula-img {
+    width: 100%;
+    height: auto;
+}
